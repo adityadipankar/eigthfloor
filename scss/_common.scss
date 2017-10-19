@@ -18,10 +18,16 @@
     src: url("../fonts/Gotham Pro/GothaProMed.otf");
 }
 
+// BillDesk fonts
 $thin-font: "gotham-thin";
 $regular-font: "gotham-regular";
 $medium-font: "gotham-medium";
 $bold-font: "gotham-bold";
+
+// BillDesk Colors
+$billDesk-orange: #f07322;
+$billdesk-primary-black: #2e2e2e;
+$billdesk-secondary-black: #ababab;
 
 body {
     font-family: "gotham-medium", sans-serif;
@@ -185,6 +191,7 @@ h1{
         width: 100%;
         position: relative;
         padding: 25px;
+        height: 90px;
         // border-bottom: 1px solid #D5D5D5;
         img {
             width: auto;
@@ -198,8 +205,14 @@ h1{
         #nav_prev {
             position: absolute;
             right: 27px;
-            top: 24px;
+            top: 25px;
             font-size: 30px;
+        }
+        #nav_close {
+            position: absolute;
+            right: 27px;
+            top: 30px;
+            font-size: 20px;
         }
     }
     .content{
@@ -298,5 +311,8 @@ h1{
       line-height: 17px;
       display: -webkit-inline-box;
       padding: 15px 0px;
+    }
+    .padding-top-25{
+      padding-top:25px;
     }
  } //end of this section

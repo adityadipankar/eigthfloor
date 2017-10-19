@@ -13,19 +13,24 @@
     .payment_gatemways {
         list-style: none;
         padding: 0px;
+        margin-top: 15px;
         li {
             padding: 20px 0px 20px 0px;
             position: relative;
-            border-bottom: 1px solid #eaeaea;
+            border-top: 1px solid #eaeaea;
+            height:80px;
             &:after {
                 position: absolute;
-                right: 10px;
-                top: 10px;
+                right: 24px;
+                top: 20px;
                 content: "\203A";
                 display: inline-block;
                 font-size: 22px;
                 cursor: pointer;
                 color: #f07322;
+            }
+            &:last-child{
+              border-bottom:1px solid #eaeaea;
             }
         }
         img {
@@ -33,11 +38,12 @@
         }
 
         #tez {
-            height: 40px;
+            height: 38px;
         }
 
         #upi {
-            height: 20px;
+            height: 18px;
+            margin:9px 0px 0px 6px;
         }
     }
 }
