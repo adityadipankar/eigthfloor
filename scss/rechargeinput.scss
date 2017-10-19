@@ -1,0 +1,31 @@
+@import 'common';
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
+    .selected_operator {
+        margin: 0px;
+        img {
+          height: 24px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        span {
+          font-family: $thin-font;
+          font-size: 18px;
+          color: #2E2E2E;
+          letter-spacing: 0.11px;
+          line-height: 44px;
+        }
+    }
+    .recharge_form {
+        padding: 15px 0px 0px 0px;
+    }
+}

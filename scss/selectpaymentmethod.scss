@@ -1,0 +1,43 @@
+@import "common";
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
+    .payment_gatemways {
+        list-style: none;
+        padding: 0px;
+        li {
+            padding: 20px 0px 20px 0px;
+            position: relative;
+            border-bottom: 1px solid #eaeaea;
+            &:after {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                content: "\203A";
+                display: inline-block;
+                font-size: 22px;
+                cursor: pointer;
+                color: #f07322;
+            }
+        }
+        img {
+            width: auto;
+        }
+
+        #tez {
+            height: 40px;
+        }
+
+        #upi {
+            height: 20px;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+@import "common";
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
+    .network_operators_list {
+        padding: 0px;
+        margin-top: 5px;
+
+        li {
+            position: relative;
+            list-style: none;
+            padding: 10px;
+            cursor: pointer;
+
+            &:after {
+                position: absolute;
+                right: 10px;
+                top: 4px;
+                content: "\203A";
+                display: inline-block;
+                font-size: 22px;
+                cursor: pointer;
+                color: #f07322;
+            }
+            img {
+                height: 30px;
+                weight: 30px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            span {
+                display: inline-block;
+                line-height: 30px;
+                vertical-align: top;
+                font-size: 18px;
+                margin-left: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .network_operators_grid {
+        padding: 0px;
+        margin-top: 10px;
+        li {
+          width: 27vw;
+          height: 27vw;
+          padding: 8px;
+          margin: 1.3vw 0.5vw;
+          display: inline-block;
+          vertical-align: top;
+          border-radius: 6px;
+          position: relative;
+
+            img {
+                width: auto;
+                height: 50%;
+                display: block;
+                max-width: 80%;
+                margin-bottom: 5px;
+            }
+            span {
+                position: absolute;
+                bottom: 5px;
+                left: 10px;
+                display: block;
+                font-size: 13px;
+                text-align: left;
+                width: 100%;
+                color: #fafeff;
+                font-weight: 300;
+                letter-spacing: -1px;
+                font-family: $regular-font;
+            }
+        }
+        #vodafone {
+            background-color: #d82332;
+        }
+        #airtel {
+            background-color: #d32a31;
+        }
+        #tata_indicom {
+            background-color: #00a3da;
+            img {
+                height: auto;
+            }
+        }
+        #reliance_gsm {
+            background-color: #2066a3;
+        }
+        #mtnl_delhi,
+        #mtnl_mumbai {
+            background-color: #005b2e;
+            img {
+                height: 40%;
+            }
+        }
+        #jio {
+            background-color: #005aac;
+            img {
+                height: 40%;
+            }
+        }
+        #idea {
+            background-color: #292d78;
+        }
+        #docomo {
+            background-color: #1d0407;
+            img {
+                height: auto;
+            }
+        }
+        #bsnl {
+            background-color: #0067a5;
+        }
+        #uninor {
+            background-color: #0cbdf1;
+        }
+        #mts {
+            background-color: #ef3829;
+        }
+    }
+}

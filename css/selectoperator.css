@@ -1,0 +1,333 @@
+@font-face {
+  font-family: "gotham-regular";
+  src: url("../fonts/Gotham Pro/GothaProReg.otf"); }
+@font-face {
+  font-family: "gotham-thin";
+  src: url("../fonts/Gotham Pro/GothaProLig.otf"); }
+@font-face {
+  font-family: "gotham-bold";
+  src: url("../fonts/Gotham Pro/GothaProBol.otf"); }
+@font-face {
+  font-family: "gotham-medium";
+  src: url("../fonts/Gotham Pro/GothaProMed.otf"); }
+body {
+  font-family: "gotham-medium", sans-serif;
+  background-color: #F5F5F5; }
+
+h1 {
+  font-size: 11px;
+  color: #777; }
+
+.container {
+  padding: 0px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
+
+.sub_heading {
+  font-size: 15px;
+  color: #575757; }
+
+.page_division {
+  color: #EAEAEA;
+  border-width: 1px;
+  margin: 15px 0px; }
+
+.form-group {
+  position: relative;
+  margin-bottom: 5px; }
+  .form-group a {
+    text-decoration: none;
+    color: #f07332; }
+  .form-group .input-group-addon {
+    font-size: 19px;
+    font-family: "gotham-medium";
+    letter-spacing: -0.5px;
+    color: #ababab;
+    background-color: #f9f9f9;
+    padding-top: 8px;
+    width: 52px;
+    text-align: center; }
+  .form-group .input-group {
+    width: 100%;
+    margin-bottom: 22px;
+    height: 46px; }
+  .form-group input {
+    border: solid 1px #B8B8B8;
+    font-size: 19px;
+    height: 46px; }
+    .form-group input:focus {
+      border-color: #F07322;
+      box-shadow: 0px 0px #fff; }
+  .form-group .btn-right {
+    position: absolute;
+    bottom: 13px;
+    right: 17px;
+    z-index: 3;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: -0.1px;
+    color: #f07322;
+    font-family: "gotham-regular"; }
+  .form-group .input-logo {
+    position: absolute;
+    right: 0px;
+    height: 16px;
+    top: -2px; }
+  .form-group .tez-logo {
+    position: absolute;
+    right: 0px;
+    height: 30px;
+    top: -11px; }
+
+.at-the-rate {
+  float: left; }
+
+.field_label,
+.control-label {
+  font-size: 13px;
+  display: block;
+  color: #ababab;
+  letter-spacing: -0.13px;
+  font-family: "gotham-medium";
+  font-weight: normal; }
+
+.button {
+  border-radius: 4px;
+  border-width: 0px;
+  padding: 7px; }
+  .button:focus {
+    outline: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); }
+  .button.fullwidth {
+    width: 100%; }
+  .button.primary {
+    background-color: #f07322;
+    color: #fff;
+    padding: 7px;
+    font-size: 21px;
+    height: 46px; }
+  .button:disabled {
+    background-color: #d8d8d8;
+    color: #fff; }
+
+.horizontal_tabs {
+  padding: 0px;
+  display: flex;
+  max-width: 100%;
+  overflow: auto;
+  background-color: white;
+  margin-bottom: 0px;
+  border-top: 1px solid #d5d5d5; }
+  .horizontal_tabs li {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+    border-style: solid;
+    border-width: 0px 0px 1px 1px;
+    border-color: #d5d5d5;
+    padding: 10px 25px;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    color: #575757;
+    cursor: pointer;
+    background-color: #f5f5f5; }
+    .horizontal_tabs li.active {
+      color: #F07322;
+      border-bottom-color: #f07322;
+      background-color: white; }
+
+@media (max-width: 479px) {
+  .nav_bar {
+    width: 100%;
+    position: relative;
+    padding: 25px; }
+    .nav_bar img {
+      width: auto;
+      height: 40px; }
+    .nav_bar .page_title {
+      color: #575757;
+      font-size: 14px;
+      margin-left: 10px; }
+    .nav_bar #nav_prev {
+      position: absolute;
+      right: 27px;
+      top: 24px;
+      font-size: 30px; }
+
+  .content {
+    padding: 25px 25px 35px 25px;
+    background-color: white; }
+
+  .content-list {
+    padding: 0px 25px;
+    background-color: white; }
+
+  .content-grid {
+    padding: 20px 25px 12px 25px;
+    background-color: white; }
+
+  .menu {
+    padding: 0px;
+    background-color: white; }
+
+  .powered-by {
+    width: 50%;
+    margin: 17px auto;
+    display: block; }
+
+  .billdesk-city {
+    max-width: 100%;
+    opacity: 0.8;
+    z-index: -1; }
+
+  .recharge_summary {
+    padding: 25px 25px 15px 25px;
+    border-bottom: 1px solid #d5d5d5;
+    background-color: white; }
+    .recharge_summary .field_label {
+      display: block;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      color: #575757; }
+    .recharge_summary > span {
+      width: 49%;
+      display: inline-block;
+      vertical-align: top; }
+    .recharge_summary .operator img {
+      height: 24px;
+      width: auto;
+      display: inline-block; }
+    .recharge_summary .operator .operator_name {
+      font-size: 16px;
+      line-height: 2.75;
+      letter-spacing: 0.1px;
+      text-align: left;
+      color: #2e2e2e; }
+    .recharge_summary .cost {
+      text-align: right; }
+      .recharge_summary .cost .amount {
+        font-size: 16px;
+        line-height: 2.75;
+        letter-spacing: 0.1px;
+        text-align: left;
+        color: #2e2e2e; }
+
+  .cancel_transactions {
+    text-align: center;
+    margin: 17px 0px;
+    height: 46px;
+    background-color: #eaeaea;
+    border-radius: 4px; }
+    .cancel_transactions span {
+      margin-left: 10px;
+      font-size: 15px;
+      line-height: 3.38;
+      letter-spacing: -0.2px;
+      color: #868686;
+      font-family: "gotham-regular"; }
+
+  .disclaimer {
+    font-size: 11px;
+    font-family: "gotham-regular";
+    letter-spacing: 0.1px;
+    color: #afafaf;
+    line-height: 17px;
+    display: -webkit-inline-box;
+    padding: 15px 0px; } }
+@media (max-width: 479px) {
+  .network_operators_list {
+    padding: 0px;
+    margin-top: 5px; }
+    .network_operators_list li {
+      position: relative;
+      list-style: none;
+      padding: 10px;
+      cursor: pointer; }
+      .network_operators_list li:after {
+        position: absolute;
+        right: 10px;
+        top: 4px;
+        content: "\203A";
+        display: inline-block;
+        font-size: 22px;
+        cursor: pointer;
+        color: #f07322; }
+      .network_operators_list li img {
+        height: 30px;
+        weight: 30px;
+        display: inline-block;
+        vertical-align: top; }
+      .network_operators_list li span {
+        display: inline-block;
+        line-height: 30px;
+        vertical-align: top;
+        font-size: 18px;
+        margin-left: 20px;
+        font-weight: 400; }
+
+  .network_operators_grid {
+    padding: 0px;
+    margin-top: 10px; }
+    .network_operators_grid li {
+      width: 27vw;
+      height: 27vw;
+      padding: 8px;
+      margin: 1.3vw 0.5vw;
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 6px;
+      position: relative; }
+      .network_operators_grid li img {
+        width: auto;
+        height: 50%;
+        display: block;
+        max-width: 80%;
+        margin-bottom: 5px; }
+      .network_operators_grid li span {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        display: block;
+        font-size: 13px;
+        text-align: left;
+        width: 100%;
+        color: #fafeff;
+        font-weight: 300;
+        letter-spacing: -1px;
+        font-family: "gotham-regular"; }
+    .network_operators_grid #vodafone {
+      background-color: #d82332; }
+    .network_operators_grid #airtel {
+      background-color: #d32a31; }
+    .network_operators_grid #tata_indicom {
+      background-color: #00a3da; }
+      .network_operators_grid #tata_indicom img {
+        height: auto; }
+    .network_operators_grid #reliance_gsm {
+      background-color: #2066a3; }
+    .network_operators_grid #mtnl_delhi,
+    .network_operators_grid #mtnl_mumbai {
+      background-color: #005b2e; }
+      .network_operators_grid #mtnl_delhi img,
+      .network_operators_grid #mtnl_mumbai img {
+        height: 40%; }
+    .network_operators_grid #jio {
+      background-color: #005aac; }
+      .network_operators_grid #jio img {
+        height: 40%; }
+    .network_operators_grid #idea {
+      background-color: #292d78; }
+    .network_operators_grid #docomo {
+      background-color: #1d0407; }
+      .network_operators_grid #docomo img {
+        height: auto; }
+    .network_operators_grid #bsnl {
+      background-color: #0067a5; }
+    .network_operators_grid #uninor {
+      background-color: #0cbdf1; }
+    .network_operators_grid #mts {
+      background-color: #ef3829; } }
+
+/*# sourceMappingURL=selectoperator.css.map */

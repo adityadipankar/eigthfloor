@@ -1,0 +1,76 @@
+@import "common";
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
+    .container {
+        padding: 25px 20px 5px;
+    }
+
+    .recharge_summary {
+        padding: 0px 0px;
+        .field_label {
+            display: block;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            color: #575757;
+        }
+        > span {
+            width: 49%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .operator {
+            img {
+                height: 40px;
+                width: auto;
+                display: inline-block;
+            }
+            .operator_name {
+                font-size: 16px;
+                line-height: 2.75;
+                letter-spacing: 0.1px;
+                text-align: left;
+                color: #2e2e2e;
+            }
+        }
+        .cost {
+            text-align: right;
+            .amount {
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 0.4px;
+                color: #575757;
+                line-height: 47px;
+            }
+        }
+    }
+
+    .payment_details {
+    }
+    .cancel_transactions {
+        display: block;
+        text-align: center;
+        span {
+            margin-left: 10px;
+            font-size: 15px;
+            line-height: 3.38;
+            letter-spacing: -0.2px;
+            color: #565656;
+        }
+    }
+
+    .powered-by {
+        margin: 0px auto;
+        display: block;
+    }
+}
