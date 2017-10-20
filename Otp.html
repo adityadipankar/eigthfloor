@@ -41,11 +41,11 @@
             pattern="[0-9]*"
             inputmode="numeric"
             class="form-control"
-            id="recharge_amount">
+            id="otp">
         </div>
       </div>
       <br />
-      <button disabled=true class="button fullwidth ">Continue</button>
+      <button disabled=true class="button fullwidth" id="confirm_otp">Continue</button>
       <br />
       <br />
       <button class="button white resend_otp">Resend OTP</button>
@@ -76,12 +76,14 @@
       $("#nav_prev").on("click", function(e) {
         window.history.back();
       });
-      $("#mobile_number").on('input', function() {
+      $("#otp").on('input', function() {
         var length = $(this).val().length;
-        if (length > 10) {
-          $("#pay_button").addClass('primary');
+        if (length >= 4) {
+          $("#confirm_otp").removeAttr('disabled');
+          $("#confirm_otp").addClass('primary');
         } else {
-          $("#pay_button").removeClass('primary');
+          $("#confirm_otp").attr('disabled', true);
+          $("#confirm_otp").removeClass('primary');
         }
       })
     });

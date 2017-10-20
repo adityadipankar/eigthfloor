@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+    <title>Add Card</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        type="text/css"
+        href="css/addcard.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="nav_bar">
+
+            <a href="/">
+                <img src="images/recharge-logo.png">
+
+            </a>
+
+            <span id="nav_prev">
+
+                <svg width="18px"
+                    height="18px"
+                    viewBox="0 0 14 14"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xlink="http://www.w3.org/1999/xlink">
+
+                    <g stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd">
+
+                        <g id="Selecting-Network-Operator-Copy-2"
+                            transform="translate(-1061.000000, -207.000000)"
+                            fill-rule="nonzero"
+                            fill="#979797">
+                            <path d="M1063.52266,213.640675 L1074.63269,213.640675 L1074.63269,214.640675 L1063.45232,214.640675 L1069.30491,219.97559 L1068.63125,220.714626 L1061.51829,214.230835 L1068.61453,207.134598 L1069.32164,207.841705 L1063.52266,213.640675 Z"
+                                id="Combined-Shape" />
+
+                        </g>
+                    </g>
+                </svg>
+            </span>
+        </div>
+
+        <div class="content">
+
+            <div class="add_card_form">
+                <h3>Add a new card</h3>
+                <div class="form-group">
+
+                    <div class="input-group">
+                        <input type="text"
+                            class="form-control"
+                            id="card_number"
+                            autofocus="autofocus"
+                            style="border-radius:4px;"
+                            placeholder="Card number">
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    <div class="input-group">
+                        <input type="text"
+                            class="form-control"
+                            id="card_holder"
+                            autofocus="autofocus"
+                            style="border-radius:4px;"
+                            placeholder="Card holder name">
+
+                    </div>
+                </div>
+
+                <div class="card_extras">
+
+                    <div class="valid_thru">valid thru
+                    </div>
+
+                    <div class="card_validity">
+
+                        <input type="text"
+                            class="form-control"
+                            id="validity"
+                            autofocus="autofocus"
+                            style="border-radius:4px;"
+                            placeholder="mm / yy">
+
+                    </div>
+
+                    <div class="card_cvv">
+
+                        <input type="text"
+                            class="form-control"
+                            id="cvv"
+                            autofocus="autofocus"
+                            style="border-radius:4px;"
+                            placeholder="cvv">
+
+                    </div>
+                </div>
+            </div>
+            <button disabled="true"
+                id="add_button"
+                class="button fullwidth">Add & Make Payment
+            </button>
+
+            <div class="cancel_transactions">
+
+                <svg width="15px"
+                    height="15px"
+                    viewBox="0 0 13 13"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xlink="http://www.w3.org/1999/xlink">
+
+                    <g stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd">
+                        <path d="M6.5,6.07089821 L1.0265662,0.597464419 L0.319459424,1.3045712 L5.79289322,6.778005 L0.319459424,12.2514388 L1.0265662,12.9585456 L6.5,7.48511178 L11.9734338,12.9585456 L12.6805406,12.2514388 L7.20710678,6.778005 L12.6805406,1.3045712 L11.9734338,0.597464419 L6.5,6.07089821 Z"
+                            id="Combined-Shape"
+                            fill="#F07322"
+                            fill-rule="nonzero" />
+
+                    </g>
+                </svg>
+
+                <span>Cancel this transaction
+                </span>
+            </div>
+
+            <div class="supported_cards">
+                <h4>Supported Cards</h4>
+                <div class="card_types">
+                    <img src="images/visa_logo.png" />
+                    <img src="images/visa_logo.png" />
+                    <img src="images/visa_logo.png" />
+                    <img src="images/visa_logo.png" />
+                    <img src="images/visa_logo.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="billdesk-about">
+        <img src="images/powered-by-billdesk.png"
+            class="powered-by">
+
+        <img src="images/city-mobile.png"
+            class="billdesk-city">
+
+    </div>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous" ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" ></script>
+
+
+    <script type="text/javascript">
+        $(function() {
+            $("#nav_prev").on("click", function(e) {
+                window.history.back();
+            });
+            $(
+                "#card_number, #card_holder, #cvv, #validity"
+            ).on("input", function() {
+                if (
+                    $("#card_number").val().length &&
+                    $("#card_holder").val().length &&
+                    $("#cvv").val().length &&
+                    $("#validity").val().length
+                ) {
+                    $("#add_button").addClass("primary");
+                    $("#add_button").removeAttr("disabled");
+                } else {
+                    $("#add_button").attr("disabled", true);
+                    $("#add_button").removeClass("primary");
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>

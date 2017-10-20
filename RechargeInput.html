@@ -89,7 +89,7 @@
           <div class="input-group">
             <span class="input-group-addon">+91</span>
             <input type="number"
-              maxlength="10"
+              max="9999999999"
               pattern="[0-9]*"
               inputmode="numeric"
               class="form-control"
@@ -170,9 +170,10 @@
       $("#nav_prev").on("click", function(e) {
         window.history.back();
       });
-      $("#mobile_number").on('input', function() {
-        var length = $(this).val().length;
-        if (length > 10) {
+      $("#mobile_number, #recharge_amount").on('input', function() {
+        var length = $("#mobile_number").val().length;
+        var rechargeValue = $("#recharge_amount").val().length;
+        if (length >= 10 && parseInt(rechargeValue) > 0) {
           $("#pay_button").addClass('primary');
         } else {
           $("#pay_button").removeClass('primary');

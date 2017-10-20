@@ -70,7 +70,7 @@
             </div>
           </div>
           <div class="card_cvv_form">
-            <input type="text" placeholder="CVV" />
+            <input type="text" max="999" pattern="[0-9]*" placeholder="CVV" />
             <button id="pay_button" class="button">Pay</button>
           </div>
         </li>
@@ -102,9 +102,9 @@
       $("#nav_prev").on("click", function(e) {
         window.history.back();
       });
-      $("#mobile_number").on('input', function() {
+      $(".card_cvv_form input").on('input', function() {
         var length = $(this).val().length;
-        if (length > 10) {
+        if (length >= 3) {
           $("#pay_button").addClass('primary');
         } else {
           $("#pay_button").removeClass('primary');

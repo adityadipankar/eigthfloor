@@ -1,0 +1,68 @@
+@import "common";
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
+    .add_card_form {
+        > h3 {
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            color: #343434;
+            margin: 0px;
+        }
+        .card_extras {
+            margin: 15px 0px;
+            > div {
+                display: inline-block;
+                vertical-align: top;
+            }
+            input {
+                height: 46px;
+                padding: 10px 15px;
+                font-size: 20px;
+                line-height: 16px;
+            }
+            .valid_thru {
+                width: 15%;
+                text-align: center;
+                font-size: 11px;
+                font-weight: 500;
+                letter-spacing: -0.3px;
+                color: #969696;
+                margin-top: 8px;
+            }
+            .card_validity {
+                width: 49%;
+            }
+            .card_cvv {
+                width: 32%;
+            }
+        }
+    }
+
+    .supported_cards {
+        border-top: solid 1px #e5e5e5;
+
+        h4 {
+            font-weight: $thin-font;
+            font-size: 14px;
+            letter-spacing: -0.3px;
+            text-align: center;
+            color: #a1a1a1;
+        }
+        img {
+            display: inline-block;
+            vertical-align: top;
+            width: 18%;
+            padding: 4px;
+        }
+    }
+}
