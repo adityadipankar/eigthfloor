@@ -265,52 +265,24 @@ h1 {
   .padding-top-25 {
     padding-top: 25px; } }
 @media (max-width: 479px) {
-  .container {
-    padding: 25px 20px 5px; }
-
-  .recharge_summary {
-    padding: 0px 0px; }
-    .recharge_summary .field_label {
-      display: block;
-      font-size: 11px;
+  .otp_form {
+    background-color: #fff;
+    padding: 15px; }
+    .otp_form h3 {
+      font-size: 14px;
       font-weight: 500;
+      line-height: 1.18;
       letter-spacing: -0.3px;
-      color: #575757; }
-    .recharge_summary > span {
-      width: 49%;
-      display: inline-block;
-      vertical-align: top; }
-    .recharge_summary .operator img {
-      height: 40px;
-      width: auto;
-      display: inline-block; }
-    .recharge_summary .operator .operator_name {
-      font-size: 16px;
-      line-height: 2.75;
-      letter-spacing: 0.1px;
       text-align: left;
-      color: #2e2e2e; }
-    .recharge_summary .cost {
-      text-align: right; }
-      .recharge_summary .cost .amount {
-        font-size: 20px;
-        font-weight: 500;
-        letter-spacing: 0.4px;
-        color: #575757;
-        line-height: 47px; }
+      color: #343434; }
+    .otp_form .input-group input.form-control {
+      border-radius: 4px; }
+    .otp_form .resend_otp {
+      margin: 0px auto;
+      display: block; }
+    .otp_form .form_message {
+      border-top: solid 1px #e5e5e5;
+      padding-top: 15px;
+      margin-top: 15px; } }
 
-  .cancel_transactions {
-    display: block;
-    text-align: center; }
-    .cancel_transactions span {
-      margin-left: 10px;
-      font-size: 15px;
-      line-height: 3.38;
-      letter-spacing: -0.2px;
-      color: #565656; }
-
-  .powered-by {
-    margin: 0px auto;
-    display: block; } }
-
-/*# sourceMappingURL=upipayment.css.map */
+/*# sourceMappingURL=otp.css.map */

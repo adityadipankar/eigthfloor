@@ -1,0 +1,40 @@
+@import "common";
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
+    .otp_form {
+        background-color: #fff;
+        padding: 15px;
+
+        h3 {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.18;
+          letter-spacing: -0.3px;
+          text-align: left;
+          color: #343434;
+        }
+
+        .input-group input.form-control {
+            border-radius: 4px;
+        }
+
+        .resend_otp {
+            margin: 0px auto;
+            display: block;
+        }
+        .form_message {
+            border-top: solid 1px #e5e5e5;
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+    }
+}

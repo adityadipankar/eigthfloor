@@ -1,4 +1,4 @@
-@import 'common';
+@import "common";
 
 @media (min-width: 1200px) {
 }
@@ -13,19 +13,72 @@
     .selected_operator {
         margin: 0px;
         img {
-          height: 24px;
-          display: inline-block;
-          vertical-align: middle;
+            height: 24px;
+            display: inline-block;
+            vertical-align: middle;
         }
         span {
-          font-family: $thin-font;
-          font-size: 18px;
-          color: #2E2E2E;
-          letter-spacing: 0.11px;
-          line-height: 44px;
+            font-family: $thin-font;
+            font-size: 18px;
+            color: #2e2e2e;
+            letter-spacing: 0.11px;
+            line-height: 44px;
         }
     }
     .recharge_form {
-        padding: 15px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .view_plans {
+        padding: 5px 15px;
+        border-top: 1px solid #d1d1d1;
+        background-color: #fff;
+        h3 {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            text-align: left;
+            color: #969696;
+            margin: 10px;
+        }
+        ul {
+            padding: 0px;
+            list-style: none;
+        }
+        li {
+            border-top: solid 1px #e5e5e5;
+            padding: 15px 10px;
+
+            img {
+                height: 30px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 10px;
+            }
+            div {
+                display: inline-block;
+                .past_number {
+                    font-size: 14px;
+                    line-height: 1.18;
+                    letter-spacing: 0.1px;
+                    text-align: left;
+                    color: #b0b0b0;
+                }
+                .past_area {
+                    display: block;
+                    font-weight: 500;
+                    color: #989898;
+                }
+            }
+            > span {
+                display: inline-block;
+                vertical-align: top;
+                float: right;
+                background-color: #f1f1f1;
+                border-radius: 20px;
+                padding: 5px 10px;
+                line-height: 20px;
+                font-size: 14px;
+            }
+        }
     }
 }

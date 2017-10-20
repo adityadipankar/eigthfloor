@@ -31,10 +31,10 @@ $billdesk-secondary-black: #ababab;
 
 body {
     font-family: "gotham-medium", sans-serif;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
 }
 
-h1{
+h1 {
     font-size: 11px;
     color: #777;
 }
@@ -42,7 +42,7 @@ h1{
 .container {
     padding: 0px;
     // border-bottom: 1px solid #d5d5d5;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .sub_heading {
@@ -51,7 +51,7 @@ h1{
 }
 
 .page_division {
-    color: #EAEAEA;
+    color: #eaeaea;
     border-width: 1px;
     margin: 15px 0px;
 }
@@ -59,33 +59,34 @@ h1{
 .form-group {
     position: relative;
     margin-bottom: 5px;
-    a{
-      text-decoration: none;
-      color:#f07332;
+    margin-top: 22px;
+    a {
+        text-decoration: none;
+        color: #f07332;
     }
     .input-group-addon {
-      font-size: 19px;
-      font-family: "gotham-medium";
-      letter-spacing: -0.5px;
-      color: #ababab;
-      background-color: #f9f9f9;
-      padding-top: 8px;
-      width: 52px;
-      text-align: center;
+        font-size: 19px;
+        font-family: "gotham-medium";
+        letter-spacing: -0.5px;
+        color: #ababab;
+        background-color: #f9f9f9;
+        padding-top: 8px;
+        width: 52px;
+        text-align: center;
     }
     .input-group {
-      width: 100%;
-      margin-bottom: 22px;
-      height: 46px;
+        width: 100%;
+        // margin-bottom: 22px;
+        height: 46px;
     }
     input {
-        border: solid 1px #B8B8B8;
+        border: solid 1px #b8b8b8;
         font-size: 19px;
         height: 46px;
         padding: 2px 0px 0px 10px;
-        &:focus{
-          border-color: #F07322;
-          box-shadow: 0px 0px #fff;
+        &:focus {
+            border-color: #f07322;
+            box-shadow: 0px 0px #fff;
         }
     }
     .btn-right {
@@ -105,30 +106,33 @@ h1{
         height: 16px;
         top: -2px;
     }
-    .tez-logo{
-      position: absolute;
-      right: 0px;
-      height:30px;
-      top: -11px;
+    .tez-logo {
+        position: absolute;
+        right: 0px;
+        height: 30px;
+        top: -11px;
     }
 }
-.at-the-rate{
-  float: left;
+.at-the-rate {
+    float: left;
 }
 .field_label,
 .control-label {
-  font-size: 13px;
-  display: block;
-  color: #ababab;
-  letter-spacing: -0.13px;
-  font-family: $medium-font;
-  font-weight: normal;
+    font-size: 13px;
+    display: block;
+    color: #ababab;
+    letter-spacing: -0.13px;
+    font-family: $medium-font;
+    font-weight: normal;
 }
 
 .button {
     border-radius: 4px;
     border-width: 0px;
     padding: 7px;
+    height: 46px;
+    padding: 7px;
+    font-size: 21px;
 
     &:focus {
         outline: none;
@@ -141,13 +145,21 @@ h1{
     &.primary {
         background-color: #f07322;
         color: #fff;
-        padding: 7px;
-        font-size: 21px;
-        height: 46px;
     }
     &:disabled {
         background-color: #d8d8d8;
         color: #fff;
+    }
+
+    &.white {
+        border: solid 1px #e3e3e3;
+        border-radius: 4px;
+        background-color: #fff;
+        font-weight: 300;
+        font-family: "gotham-thin";
+        font-size: 14px;
+        height: auto;
+        padding: 4px 9px;
     }
 }
 
@@ -161,30 +173,40 @@ h1{
     border-top: 1px solid #d5d5d5;
 
     li {
-      list-style: none;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      vertical-align: top;
-      border-style: solid;
-      border-width: 0px 0px 1px 1px;
-      border-color: #d5d5d5;
-      padding: 10px 25px;
-      font-size: 14px;
-      letter-spacing: 0.1px;
-      color: #575757;
-      cursor: pointer;
-      background-color: #f5f5f5;
+        list-style: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: top;
+        border-style: solid;
+        border-width: 0px 0px 1px 1px;
+        border-color: #d5d5d5;
+        padding: 10px 25px;
+        font-size: 14px;
+        letter-spacing: 0.1px;
+        color: #575757;
+        cursor: pointer;
+        background-color: #f5f5f5;
         &:last-child {
-          // border-width: 1px;
+            // border-width: 1px;
         }
 
         &.active {
-          color:#F07322;
-          border-bottom-color: #f07322;
-          background-color: white;
+            color: #f07322;
+            border-bottom-color: #f07322;
+            background-color: white;
         }
     }
+}
+
+.form_message {
+    font-family: $thin-font;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.36;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #828282;
 }
 
 @media (max-width: 479px) {
@@ -216,41 +238,41 @@ h1{
             font-size: 20px;
         }
     }
-    .content{
-      padding: 25px 25px 35px 25px;
-      background-color: white;
-      // box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    .content {
+        padding: 25px 25px 35px 25px;
+        background-color: white;
+        // box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     }
-    .content-list{
-      padding: 0px 25px;
-      background-color: white;
-      // box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    .content-list {
+        padding: 0px 25px;
+        background-color: white;
+        // box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     }
-    .content-grid{
-      padding: 20px 25px 12px 25px;
-      background-color: white;
-      // box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    .content-grid {
+        padding: 20px 25px 12px 25px;
+        background-color: white;
+        // box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     }
-    .menu{
-      padding: 0px;
-      background-color: white;
+    .menu {
+        padding: 0px;
+        background-color: white;
     }
     .powered-by {
-      width: 50%;
-      margin: 17px auto;
-      display: block;
+        width: 50%;
+        margin: 17px auto;
+        display: block;
     }
 
     .billdesk-city {
-      max-width: 100%;
-      opacity: 0.8;
-      z-index: -1;
+        max-width: 100%;
+        opacity: 0.8;
+        z-index: -1;
     }
 
     .recharge_summary {
-      padding: 25px 25px 15px 25px;
-      border-bottom: 1px solid #d5d5d5;
-      background-color: white;
+        padding: 25px 25px 15px 25px;
+        border-bottom: 1px solid #d5d5d5;
+        background-color: white;
         .field_label {
             display: block;
             font-size: 11px;
@@ -281,20 +303,20 @@ h1{
         .cost {
             text-align: right;
             .amount {
-              font-size: 16px;
-              line-height: 2.75;
-              letter-spacing: 0.1px;
-              text-align: left;
-              color: #2e2e2e;
+                font-size: 16px;
+                line-height: 2.75;
+                letter-spacing: 0.1px;
+                text-align: left;
+                color: #2e2e2e;
             }
         }
     }
     .cancel_transactions {
-      text-align: center;
-      margin: 17px 0px;
-      height: 46px;
-      background-color: #eaeaea;
-      border-radius: 4px;
+        text-align: center;
+        margin: 17px 0px;
+        height: 46px;
+        background-color: #eaeaea;
+        border-radius: 4px;
         span {
             margin-left: 10px;
             font-size: 15px;
@@ -304,16 +326,16 @@ h1{
             font-family: $regular-font;
         }
     }
-    .disclaimer{
-      font-size: 11px;
-      font-family: "gotham-regular";
-      letter-spacing: 0.1px;
-      color: #afafaf;
-      line-height: 17px;
-      display: -webkit-inline-box;
-      padding: 15px 0px;
+    .disclaimer {
+        font-size: 11px;
+        font-family: "gotham-regular";
+        letter-spacing: 0.1px;
+        color: #afafaf;
+        line-height: 17px;
+        display: -webkit-inline-box;
+        padding: 15px 0px;
     }
-    .padding-top-25{
-      padding-top:25px;
+    .padding-top-25 {
+        padding-top: 25px;
     }
- } //end of this section
+} //end of this section

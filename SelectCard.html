@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+  <title>Select Card</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+    rel="stylesheet">
+
+  <link rel="stylesheet"
+    type="text/css"
+    href="css/selectcard.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="nav_bar">
+        <a href="/"><img src="images/recharge-logo.png" /></a>
+        <span id="nav_prev">
+            <svg width="18px" height="18px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Selecting-Network-Operator-Copy-2" transform="translate(-1061.000000, -207.000000)" fill-rule="nonzero" fill="#979797">
+                        <path d="M1063.52266,213.640675 L1074.63269,213.640675 L1074.63269,214.640675 L1063.45232,214.640675 L1069.30491,219.97559 L1068.63125,220.714626 L1061.51829,214.230835 L1068.61453,207.134598 L1069.32164,207.841705 L1063.52266,213.640675 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </svg>
+        </span>
+    </div>
+    <div class="recharge_summary">
+        <span class="operator">
+            <span class="control-label">Mobile no.</span>
+            <img src="images/Operators/vodafone-color.png" />
+            <span class="operator_name">Vodafone</span>
+        </span>
+        <span class="cost">
+            <span class="control-label">Amount</span>
+            <span class="amount">₹799</span>
+        </span>
+    </div>
+    <div class="select_card">
+      <h3>Select a card</h3>
+      <ul>
+        <li>
+          <div class="card_item">
+            <img src="images/visa_logo.png" />
+            <div>
+              <b>Personal</b>
+              <span>428094 •••••• 2199</span>
+            </div>
+          </div>
+          <div class="card_cvv_form">
+            <input type="text" placeholder="CVV" />
+            <button id="pay_button" class="button">Pay</button>
+          </div>
+        </li>
+      </ul>
+      <button id="pay_button" class="button white ">Add another card</button>
+    </div>
+  </div>
+  <div class="billdesk-about">
+    <img src="images/powered-by-billdesk.png"
+      class="powered-by">
+
+    <img src="images/city-mobile.png"
+      class="billdesk-city">
+
+  </div>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+
+
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous" ></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" ></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#nav_prev").on("click", function(e) {
+        window.history.back();
+      });
+      $("#mobile_number").on('input', function() {
+        var length = $(this).val().length;
+        if (length > 10) {
+          $("#pay_button").addClass('primary');
+        } else {
+          $("#pay_button").removeClass('primary');
+        }
+      })
+    });
+
+  </script>
+</body>
+</html>
