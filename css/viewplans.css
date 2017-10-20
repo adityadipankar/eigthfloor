@@ -267,17 +267,18 @@ h1 {
     letter-spacing: 0.11px;
     line-height: 44px; }
 
-  .recharge_plans .plan {
+  .recharge_plans a.plan {
     border-bottom: solid 1px #eaeaea;
-    padding: 20px 0px; }
-    .recharge_plans .plan h3 {
+    padding: 20px 0px;
+    display: block; }
+    .recharge_plans a.plan h3 {
       font-size: 20px;
       font-weight: 500;
       letter-spacing: 0.4px;
       color: #575757;
       margin-top: 0px;
       margin-bottom: 4px; }
-    .recharge_plans .plan span {
+    .recharge_plans a.plan span {
       font-size: 12px;
       line-height: 1.36;
       letter-spacing: 0.1px;

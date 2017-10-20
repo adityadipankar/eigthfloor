@@ -256,6 +256,8 @@ h1 {
       position: relative;
       border-top: 1px solid #eaeaea;
       height: 80px; }
+      .payment_gatemways li a {
+        display: block; }
       .payment_gatemways li:after {
         position: absolute;
         right: 24px;

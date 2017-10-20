@@ -18,7 +18,10 @@
             padding: 20px 0px 20px 0px;
             position: relative;
             border-top: 1px solid #eaeaea;
-            height:80px;
+            height: 80px;
+            a {
+                display: block;
+            }
             &:after {
                 position: absolute;
                 right: 24px;
@@ -29,8 +32,8 @@
                 cursor: pointer;
                 color: #f07322;
             }
-            &:last-child{
-              border-bottom:1px solid #eaeaea;
+            &:last-child {
+                border-bottom: 1px solid #eaeaea;
             }
         }
         img {
@@ -43,7 +46,7 @@
 
         #upi {
             height: 18px;
-            margin:9px 0px 0px 6px;
+            margin: 9px 0px 0px 6px;
         }
     }
 }
