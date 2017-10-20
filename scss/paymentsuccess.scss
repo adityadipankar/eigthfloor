@@ -1,0 +1,89 @@
+@import "common";
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
+    .payment_status {
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+        text-align: left;
+        padding: 10px 20px;
+
+        .status_symbol {
+            color: #58ac15;
+            border-radius: 100%;
+            border: 1px solid #58ac15;
+            height: 20px;
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .status_message {
+            color: #58ac15;
+            display: inline-block;
+        }
+        p {
+            font-family: $thin-font;
+            font-weight: 300;
+            display: block;
+            font-size: 14px;
+        }
+    }
+    .payment_detail_block {
+        padding: 10px 20px;
+        label {
+            font-family: $thin-font;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.45;
+            letter-spacing: -0.3px;
+            text-align: left;
+            color: #575757;
+        }
+        span {
+            font-family: $bold-font;
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.45;
+            letter-spacing: -0.3px;
+            text-align: left;
+            color: #575757;
+        }
+    }
+    .transactions_action {
+        margin: 0px 15px;
+        padding-left: 10px;
+        font-size: 13px;
+        line-height: 3.38;
+        letter-spacing: -0.2px;
+        text-align: left;
+        color: #565656;
+        border-width: 1px 0px 0px;
+        border-color: #eaeaea;
+        border-style: solid;
+
+        svg {
+            height: 20px;
+            width: 20px;
+            margin-top: 15px;
+            fill: #f07322;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: super;
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Operator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/paymentsuccess.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav_bar">
+            <a href="/"><img src="images/recharge-logo.png" /></a>
+            <span id="nav_prev">
+                <svg width="18px" height="18px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Selecting-Network-Operator-Copy-2" transform="translate(-1061.000000, -207.000000)" fill-rule="nonzero" fill="#979797">
+                            <path d="M1063.52266,213.640675 L1074.63269,213.640675 L1074.63269,214.640675 L1063.45232,214.640675 L1069.30491,219.97559 L1068.63125,220.714626 L1061.51829,214.230835 L1068.61453,207.134598 L1069.32164,207.841705 L1063.52266,213.640675 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </span>
+        </div>
+        <div class="payment_status">
+            <span class="status_symbol">
+                &#10004;
+            </span>
+            <span class="status_message">
+                Recharge Successful
+            </span>
+            <br />
+            <br />
+            <p>Your Vodafone mobile has been recharged successfully. Details below.</p>
+        </div>
+        <div class="payment_detail_block">
+            <label>Mobile Number</label>
+            <span>9820288133</span>
+        </div>
+        <div class="payment_detail_block">
+            <label>Order Ref</label>
+            <span>MD32</span>
+        </div>
+        <div class="payment_detail_block">
+            <label>Amount</label>
+            <span>799</span>
+        </div>
+        <div class="payment_detail_block">
+            <label>Date & Time</label>
+            <span>4 Oct 2017 12:33:11</span>
+        </div>
+        <div class="transactions_action">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <g>
+                    <g>
+                        <path d="M288.502,32.502c-108.328,0-198.827,77.485-219.166,179.899l-42.482-53.107L0,180.784l68.769,85.961
+                            c3.352,4.178,8.338,6.447,13.427,6.447c2.596,0,5.226-0.585,7.685-1.805l103.153-51.577l-15.387-30.757l-75.8,37.892
+                            c14.063-90.5,92.27-160.059,186.655-160.059c104.271,0,189.114,84.843,189.114,189.114s-84.843,189.114-189.114,189.114v34.384
+                            C411.735,479.498,512,379.233,512,256S411.735,32.502,288.502,32.502z"/>
+                    </g>
+                </g>
+            </svg>
+            <span>
+                Make another payment
+            </span>
+        </div>
+        <div class="transactions_action">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 31.112 31.112" style="enable-background:new 0 0 31.112 31.112;" xml:space="preserve">
+            <polygon points="31.112,1.414 29.698,0 15.556,14.142 1.414,0 0,1.414 14.142,15.556 0,29.698 1.414,31.112 15.556,16.97
+                29.698,31.112 31.112,29.698 16.97,15.556 "/>
+            </svg>
+            <span>
+                Close this window
+            </span>
+        </div>
+    </div>
+    <img src="images/powered-by-billdesk.png" class="powered-by" />
+    <img src="images/city-mobile.png" class="billdesk-city">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script
+        src="http://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#nav_prev").on('click', function(e) {
+                window.history.back();
+            })
+        })
+    </script>
+</body>
+</html>
