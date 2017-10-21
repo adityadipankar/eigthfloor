@@ -229,7 +229,7 @@ h1 {
         }
     }
     .content {
-        padding: 25px;
+        padding: 20px 25px 35px 25px;
         background-color: white;
         // box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     }
@@ -265,7 +265,7 @@ h1 {
     }
 
     .recharge_summary {
-        padding: 25px 25px 15px 25px;
+        padding: 15px 25px;
         border-bottom: 1px solid #d5d5d5;
         background-color: white;
         .field_label {
@@ -310,7 +310,7 @@ h1 {
         text-align: center;
         margin: 17px 0px;
         height: 46px;
-        background-color: #eaeaea;
+        background-color: #f3f3f3;
         border-radius: 4px;
         span {
             margin-left: 10px;
