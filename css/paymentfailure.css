@@ -105,7 +105,7 @@ h1 {
     background-color: #f07322;
     color: #fff; }
   .button:disabled {
-    background-color: #D8D8D8; }
+    background-color: #d8d8d8; }
   .button.white {
     border: solid 1px #e3e3e3;
     border-radius: 4px;
@@ -153,6 +153,20 @@ h1 {
   letter-spacing: 0.1px;
   text-align: left;
   color: #ababab; }
+
+.cancel_transactions {
+  text-align: center;
+  margin: 17px 0px;
+  height: 46px;
+  background-color: #f3f3f3;
+  border-radius: 4px; }
+  .cancel_transactions span {
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 3.38;
+    letter-spacing: -0.2px;
+    color: #b3b3b3;
+    font-family: "gotham-regular"; }
 
 @media (max-width: 479px) {
   .nav_bar {

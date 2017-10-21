@@ -197,7 +197,7 @@ h1 {
     background-color: white; }
 
   .content-list {
-    padding: 1px 25px;
+    padding: 0px 25px;
     background-color: white; }
     .content-list .section-title {
       font-size: 14px;
@@ -284,37 +284,105 @@ h1 {
 
   .padding-top-25 {
     padding-top: 25px; } }
-@media (max-width: 479px) {
-  .payment_gatemways {
-    list-style: none;
-    padding: 0px;
-    margin-top: 15px; }
-    .payment_gatemways li {
-      padding: 20px 0px 20px 0px;
-      position: relative;
-      border-top: 1px solid #eaeaea;
-      height: 80px; }
-      .payment_gatemways li a {
-        display: block; }
-      .payment_gatemways li:hover {
-        background-color: #f7f7f7; }
-      .payment_gatemways li:after {
-        position: absolute;
-        right: 24px;
-        top: 20px;
-        content: "\203A";
-        display: inline-block;
-        font-size: 22px;
-        cursor: pointer;
-        color: #f07322; }
-      .payment_gatemways li:last-child {
-        border-bottom: 1px solid #eaeaea; }
-    .payment_gatemways img {
-      width: auto; }
-    .payment_gatemways #tez {
-      height: 38px; }
-    .payment_gatemways #upi {
-      height: 18px;
-      margin: 9px 0px 0px 6px; } }
+@media (min-width: 1200px) {
+  body {
+    background-color: #f5f5f5; }
 
-/*# sourceMappingURL=selectpaymentmethod.css.map */
+  .payment_form_conatiner {
+    width: 760px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: solid 1px #d5d5d5;
+    border-radius: 5px; }
+    .payment_form_conatiner .form_navigator {
+      padding: 15px;
+      width: 100%;
+      border-bottom: #ededed;
+      border-bottom: solid 1px #ededed; }
+      .payment_form_conatiner .form_navigator h3 {
+        margin: 0px 0px 5px;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        color: #969696; }
+      .payment_form_conatiner .form_navigator > span {
+        display: block; }
+        .payment_form_conatiner .form_navigator > span img {
+          height: 30px; }
+        .payment_form_conatiner .form_navigator > span b {
+          display: inline-block; }
+      .payment_form_conatiner .form_navigator .nav_prev {
+        float: right;
+        display: inline-block;
+        margin-top: 15px; }
+    .payment_form_conatiner .form_layout {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 15px; }
+    .payment_form_conatiner .payment_info {
+      display: inline-block;
+      vertical-align: top;
+      width: 49%; }
+      .payment_form_conatiner .payment_info label {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        text-align: left;
+        color: #969696;
+        font-family: "gotham-thin";
+        display: block; }
+    .payment_form_conatiner .payment_from {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      padding: 20px;
+      border-left: 1px solid #ededed; }
+      .payment_form_conatiner .payment_from .card_logo {
+        position: absolute;
+        right: 0px;
+        height: 20px;
+        top: -5px; }
+      .payment_form_conatiner .payment_from .card_extras {
+        margin: 15px 0px; }
+        .payment_form_conatiner .payment_from .card_extras > div {
+          display: inline-block;
+          vertical-align: top; }
+        .payment_form_conatiner .payment_from .card_extras input {
+          height: 46px;
+          padding: 10px 15px;
+          font-size: 20px;
+          line-height: 16px; }
+        .payment_form_conatiner .payment_from .card_extras .valid_thru {
+          width: 15%;
+          text-align: center;
+          font-size: 11px;
+          font-weight: 500;
+          letter-spacing: -0.3px;
+          color: #969696;
+          margin-top: 8px; }
+        .payment_form_conatiner .payment_from .card_extras .card_validity {
+          width: 49%; }
+        .payment_form_conatiner .payment_from .card_extras .card_cvv {
+          width: 32%; }
+
+  .billdesk-about {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    width: 100%; }
+    .billdesk-about > img {
+      display: block;
+      margin: 0px auto; }
+    .billdesk-about .powered-by {
+      height: 30px; }
+    .billdesk-about .billdesk-city {
+      height: 200px; } }
+
+/*# sourceMappingURL=creditcardpayment.css.map */
