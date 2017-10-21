@@ -12,7 +12,8 @@
 @media (max-width: 479px) {
     .selected_operator {
         margin: 20px 0px;
-        font-family: $medium-font;
+        font-family: $regular-font;
+        font-size: 13px;
         img {
           height: 30px;
           display: inline-block;
@@ -21,7 +22,6 @@
           margin-top: 2px;
         }
         span {
-            font-size: 14px;
             color: #2e2e2e;
             letter-spacing: 0.11px;
             line-height: 14px;
@@ -31,7 +31,7 @@
         }
         .selected_operator_circle{
           font-family: $thin-font;
-          font-size: 14px;
+          font-size: 13px;
           letter-spacing: 0.11px;
           display: block;
         }

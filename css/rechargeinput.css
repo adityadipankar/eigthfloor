@@ -183,7 +183,7 @@ h1 {
     background-color: white; }
 
   .content-list {
-    padding: 0px 25px;
+    padding: 1px 25px;
     background-color: white; }
     .content-list .section-title {
       font-size: 14px;
@@ -273,7 +273,8 @@ h1 {
 @media (max-width: 479px) {
   .selected_operator {
     margin: 20px 0px;
-    font-family: "gotham-medium"; }
+    font-family: "gotham-regular";
+    font-size: 13px; }
     .selected_operator img {
       height: 30px;
       display: inline-block;
@@ -281,7 +282,6 @@ h1 {
       margin-right: 5px;
       margin-top: 2px; }
     .selected_operator span {
-      font-size: 14px;
       color: #2e2e2e;
       letter-spacing: 0.11px;
       line-height: 14px; }
@@ -289,7 +289,7 @@ h1 {
       display: inline-block; }
     .selected_operator .selected_operator_circle {
       font-family: "gotham-thin";
-      font-size: 14px;
+      font-size: 13px;
       letter-spacing: 0.11px;
       display: block; }
     .selected_operator .btn-right {

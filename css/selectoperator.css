@@ -183,7 +183,7 @@ h1 {
     background-color: white; }
 
   .content-list {
-    padding: 0px 25px;
+    padding: 1px 25px;
     background-color: white; }
     .content-list .section-title {
       font-size: 14px;
@@ -315,21 +315,21 @@ h1 {
       position: relative; }
       .network_operators_grid li img {
         width: auto;
-        height: 50%;
+        height: 44%;
         display: block;
-        max-width: 80%;
+        max-width: 72%;
         margin-bottom: 5px; }
       .network_operators_grid li span {
         position: absolute;
         bottom: 5px;
         left: 10px;
         display: block;
-        font-size: 13px;
+        font-size: 12px;
         text-align: left;
         width: 100%;
         color: #fafeff;
         font-weight: 300;
-        letter-spacing: -1px;
+        letter-spacing: -0.3px;
         font-family: "gotham-regular"; }
     .network_operators_grid #vodafone {
       background-color: #d82332; }
@@ -362,6 +362,48 @@ h1 {
     .network_operators_grid #uninor {
       background-color: #0cbdf1; }
     .network_operators_grid #mts {
-      background-color: #ef3829; } }
+      background-color: #ef3829; }
+
+  .network_circles_list {
+    list-style: none;
+    padding: 0px;
+    margin-top: 15px; }
+    .network_circles_list li {
+      border-top: solid 1px #e5e5e5;
+      padding: 15px 0px; }
+      .network_circles_list li:hover {
+        background-color: #f7f7f7; }
+      .network_circles_list li:after {
+        content: "\203A";
+        font-size: 17px;
+        cursor: pointer;
+        color: #f07322;
+        float: right;
+        margin: auto 10px auto 0px; }
+      .network_circles_list li a {
+        font-family: "gotham-thin";
+        font-size: 20px;
+        color: #2e2e2e;
+        padding-left: 5px; }
+
+  .selected_operator img {
+    height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    width: auto;
+    margin-right: 10px; }
+  .selected_operator span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 25px;
+    color: #b3b3b3; }
+  .selected_operator .plans-operator-name {
+    font-family: "gotham-thin";
+    font-size: 18px;
+    color: #2E2E2E;
+    letter-spacing: 0.11px;
+    line-height: 44px; } }
 
 /*# sourceMappingURL=selectoperator.css.map */

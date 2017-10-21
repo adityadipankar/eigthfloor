@@ -36,11 +36,14 @@
     }
     .recharge_plans {
         // padding: 15px 0px;
-
         a.plan {
             border-bottom: solid 1px #eaeaea;
-            padding: 20px 0px;
+            padding: 20px 5px;
             display: block;
+            &:hover{
+              background-color: #f7f7f7;
+              text-decoration: none;
+            }
             h3 {
                 font-size: 20px;
                 font-weight: 500;

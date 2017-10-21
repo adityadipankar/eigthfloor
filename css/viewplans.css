@@ -183,7 +183,7 @@ h1 {
     background-color: white; }
 
   .content-list {
-    padding: 0px 25px;
+    padding: 1px 25px;
     background-color: white; }
     .content-list .section-title {
       font-size: 14px;
@@ -293,8 +293,11 @@ h1 {
 
   .recharge_plans a.plan {
     border-bottom: solid 1px #eaeaea;
-    padding: 20px 0px;
+    padding: 20px 5px;
     display: block; }
+    .recharge_plans a.plan:hover {
+      background-color: #f7f7f7;
+      text-decoration: none; }
     .recharge_plans a.plan h3 {
       font-size: 20px;
       font-weight: 500;

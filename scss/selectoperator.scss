@@ -62,22 +62,21 @@
 
             img {
                 width: auto;
-                height: 50%;
+                height: 44%;
                 display: block;
-                max-width: 80%;
-                margin-bottom: 5px;
-            }
+                max-width: 72%;
+                margin-bottom: 5px;            }
             span {
                 position: absolute;
                 bottom: 5px;
                 left: 10px;
                 display: block;
-                font-size: 13px;
+                font-size: 12px;
                 text-align: left;
                 width: 100%;
                 color: #fafeff;
                 font-weight: 300;
-                letter-spacing: -1px;
+                letter-spacing: -0.3px;
                 font-family: $regular-font;
             }
         }
@@ -126,6 +125,56 @@
         }
         #mts {
             background-color: #ef3829;
+        }
+    }
+    .network_circles_list{
+      list-style: none;
+      padding: 0px;
+      margin-top: 15px;
+        li{
+            border-top: solid 1px #e5e5e5;
+            padding: 15px 0px;
+            &:hover{
+              background-color: #f7f7f7;
+            }
+            &:after {
+              content: "\203A";
+              font-size: 17px;
+              cursor: pointer;
+              color: #f07322;
+              float: right;
+              margin: auto 10px auto 0px;
+            }
+          a{
+              font-family: $thin-font;
+              font-size: 20px;
+              color: $billdesk-primary-black;
+              padding-left: 5px;
+          }
+        }
+    }
+    .selected_operator {
+        img {
+            height: 40px;
+            display: inline-block;
+            vertical-align: top;
+            float: left;
+            width: auto;
+            margin-right: 10px;
+        }
+        span {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            font-size: 25px;
+            color: #b3b3b3;
+        }
+        .plans-operator-name{
+        font-family: "gotham-thin";
+        font-size: 18px;
+        color: #2E2E2E;
+        letter-spacing: 0.11px;
+        line-height: 44px;
         }
     }
 }
