@@ -15,8 +15,7 @@
         font-weight: 300;
         letter-spacing: -0.5px;
         text-align: left;
-        padding: 10px 20px;
-
+        padding-top: 30px;
         .status_symbol {
             color: #58ac15;
             border-radius: 100%;
@@ -31,6 +30,9 @@
         .status_message {
             color: #58ac15;
             display: inline-block;
+            font-family: $regular-font;
+            font-size: 22px;
+            vertical-align: sub;
         }
         p {
             font-family: $thin-font;
@@ -40,18 +42,25 @@
         }
     }
     .payment_detail_block {
-        padding: 10px 20px;
+        padding: 10px 0px;
         label {
-            font-family: $thin-font;
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 1.45;
-            letter-spacing: -0.3px;
-            text-align: left;
-            color: #575757;
+            // font-family: $thin-font;
+            // font-size: 14px;
+            // font-weight: 300;
+            // line-height: 1.45;
+            // letter-spacing: -0.3px;
+            // text-align: left;
+            // color: #575757;
+            font-size: 13px;
+            display: block;
+            color: #ababab;
+            letter-spacing: -0.13px;
+            font-family: $regular-font;
+            font-weight: normal;
+            margin-bottom: 0px;
         }
         span {
-            font-family: $bold-font;
+            font-family: $regular-font;
             display: block;
             font-size: 14px;
             font-weight: 600;
@@ -62,8 +71,7 @@
         }
     }
     .transactions_action {
-        margin: 0px 15px;
-        padding-left: 10px;
+        padding-left: 0px;
         font-size: 13px;
         line-height: 3.38;
         letter-spacing: -0.2px;
@@ -84,6 +92,9 @@
             display: inline-block;
             vertical-align: super;
             margin-left: 10px;
+        }
+        &:last-child{
+          border-bottom: 1px solid #eaeaea;
         }
     }
 }

@@ -10,35 +10,7 @@
 }
 
 @media (max-width: 479px) {
-    .payment_status {
-        font-size: 16px;
-        font-weight: 300;
-        letter-spacing: -0.5px;
-        text-align: left;
-        padding: 10px 20px;
-
-        .status_symbol_failure {
-            color: #e50600;
-            border-radius: 100%;
-            border: 1px solid #e50600;
-            height: 20px;
-            display: inline-block;
-            width: 20px;
-            text-align: center;
-            font-size: 12px;
-            line-height: 20px;
-        }
-        .status_message {
-            color: #e50600;
-            display: inline-block;
-        }
-        p {
-            font-family: $thin-font;
-            font-weight: 300;
-            display: block;
-            font-size: 14px;
-        }
-    }
+    
     .payment_detail_block {
         padding: 10px 20px;
         label {

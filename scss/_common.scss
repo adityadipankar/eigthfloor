@@ -43,6 +43,7 @@ h1 {
     padding: 0px;
     // border-bottom: 1px solid #d5d5d5;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: grid;
 }
 
 .sub_heading {
@@ -59,7 +60,6 @@ h1 {
 .form-group {
     position: relative;
     margin-bottom: 5px;
-    margin-top: 22px;
     a {
         text-decoration: none;
         color: #f07332;
@@ -76,7 +76,6 @@ h1 {
     }
     .input-group {
         width: 100%;
-        // margin-bottom: 22px;
         height: 46px;
     }
     input {
@@ -85,20 +84,9 @@ h1 {
         height: 46px;
         padding: 2px 0px 0px 10px;
         &:focus {
-            border-color: #f07322;
+            border-color: $billDesk-orange;
             box-shadow: 0px 0px #fff;
         }
-    }
-    .btn-right {
-        position: absolute;
-        bottom: 13px;
-        right: 17px;
-        z-index: 3;
-        cursor: pointer;
-        font-size: 13px;
-        letter-spacing: -0.1px;
-        color: #f07322;
-        font-family: $regular-font;
     }
     .input-logo {
         position: absolute;
@@ -120,10 +108,11 @@ h1 {
 .control-label {
     font-size: 13px;
     display: block;
-    color: #ababab;
+    color: $billdesk-primary-black;
     letter-spacing: -0.13px;
-    font-family: $medium-font;
+    font-family: $regular-font;
     font-weight: normal;
+    margin-top: 15px;
 }
 
 .button {
@@ -133,6 +122,7 @@ h1 {
     height: 46px;
     padding: 7px;
     font-size: 21px;
+    color: white;
 
     &:focus {
         outline: none;
@@ -147,8 +137,7 @@ h1 {
         color: #fff;
     }
     &:disabled {
-        background-color: #d8d8d8;
-        color: #fff;
+        background-color: #D8D8D8;
     }
 
     &.white {
@@ -190,7 +179,9 @@ h1 {
         &:last-child {
             // border-width: 1px;
         }
-
+        &:first-child{
+          border-left: none;
+        }
         &.active {
             color: #f07322;
             border-bottom-color: #f07322;
@@ -239,7 +230,7 @@ h1 {
         }
     }
     .content {
-        padding: 25px 25px 35px 25px;
+        padding: 25px;
         background-color: white;
         // box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     }

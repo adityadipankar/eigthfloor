@@ -71,13 +71,6 @@
     </div>
 
     <div class="content">
-      <div class="selected_operator">
-        <!-- Information Mast -->
-        <img src="images/Operators/vodafone-color.png">
-
-        <span>Vodafone</span>
-      </div>
-
       <form class="recharge_form"
         action="SelectPaymentMethod.html">
 
@@ -115,14 +108,25 @@
               class="form-control"
               id="recharge_amount">
           </div>
-          <span class="btn-right">
-            <a href="ViewPlans.html">view plans</a>
-          </span>
         </div>
         <p class="form_message">Unlimited talktime. 84 GB data (3GB/day).</p>
+        <div class="operator_and_plans">
+          <div class="selected_operator"> <!--Selected Operator shows here + option to view plans -->
+             <img src="images/Operators/vodafone-color.png">
+             <div class="selected_circle_info">
+               <span>Vodafone</span>
+               <span class="selected_operator_circle">Karnataka</span>
+             </div>
+             <span class="btn-right">
+               <a href="ViewPlans.html">view plans</a>
+             </span>
+          </div>
+        </div>
         <button id="pay_button" class="button fullwidth">Pay</button>
       </form>
+
     </div>
+
     <div class="view_plans">
       <h3>Past Recharges</h3>
       <ul>
