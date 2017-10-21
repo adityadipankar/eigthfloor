@@ -12,31 +12,28 @@
 @media (max-width: 479px) {
     .payment_status {
         font-size: 16px;
-        font-weight: 300;
         letter-spacing: -0.5px;
         text-align: left;
         padding-top: 30px;
         .status_symbol {
-            color: #58ac15;
-            border-radius: 100%;
-            border: 1px solid #58ac15;
-            height: 20px;
-            display: inline-block;
-            width: 20px;
-            text-align: center;
-            font-size: 12px;
-            line-height: 20px;
+            img{
+              width: 20px;
+            }
         }
         .status_message {
-            color: #58ac15;
             display: inline-block;
-            font-family: $regular-font;
+            font-family: $thin-font;
             font-size: 22px;
             vertical-align: sub;
         }
+        .success{
+          color: #58ac15;
+        }
+        .failed{
+          color: #E50600;
+        }
         p {
-            font-family: $thin-font;
-            font-weight: 300;
+            font-family: $regular-font;
             display: block;
             font-size: 14px;
         }
@@ -80,14 +77,9 @@
         border-width: 1px 0px 0px;
         border-color: #eaeaea;
         border-style: solid;
-
-        svg {
-            height: 20px;
-            width: 20px;
-            margin-top: 15px;
-            fill: #f07322;
+        img{
+          width: 20px;
         }
-
         span {
             display: inline-block;
             vertical-align: super;

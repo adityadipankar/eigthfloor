@@ -29,6 +29,13 @@ $billDesk-orange: #f07322;
 $billdesk-primary-black: #2e2e2e;
 $billdesk-secondary-black: #ababab;
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 body {
     font-family: "gotham-medium", sans-serif;
     background-color: #f5f5f5;
@@ -41,9 +48,7 @@ h1 {
 
 .container {
     padding: 0px;
-    // border-bottom: 1px solid #d5d5d5;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    display: grid;
 }
 
 .sub_heading {
@@ -112,7 +117,7 @@ h1 {
     letter-spacing: -0.13px;
     font-family: $regular-font;
     font-weight: normal;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .button {
@@ -306,19 +311,23 @@ h1 {
             }
         }
     }
-    .cancel_transactions {
+    .secondary_button {
         text-align: center;
         margin: 17px 0px;
         height: 46px;
         background-color: #f3f3f3;
         border-radius: 4px;
         span {
-            margin-left: 10px;
+            margin-left: 5px;
             font-size: 15px;
             line-height: 3.38;
             letter-spacing: -0.2px;
             color: #b3b3b3;
             font-family: $regular-font;
+        }
+        img{
+          width: 18px;
+          vertical-align: sub;
         }
     }
     .disclaimer {
@@ -329,6 +338,7 @@ h1 {
         line-height: 17px;
         display: -webkit-inline-box;
         padding: 15px 0px;
+        margin: 0px;
     }
     .padding-top-25 {
         padding-top: 25px;
