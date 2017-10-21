@@ -142,12 +142,11 @@ h1 {
 
 .form_message {
   font-family: "gotham-thin";
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 12px;
   line-height: 1.36;
   letter-spacing: 0.1px;
   text-align: left;
-  color: #828282; }
+  color: #ababab; }
 
 @media (max-width: 479px) {
   .nav_bar {
@@ -180,6 +179,10 @@ h1 {
   .content-list {
     padding: 0px 25px;
     background-color: white; }
+    .content-list .section-title {
+      font-size: 14px;
+      color: #969696;
+      margin: 20px 0px; }
 
   .content-grid {
     padding: 20px 25px 12px 25px;

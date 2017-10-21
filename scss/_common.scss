@@ -192,12 +192,11 @@ h1 {
 
 .form_message {
     font-family: $thin-font;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 12px;
     line-height: 1.36;
     letter-spacing: 0.1px;
     text-align: left;
-    color: #828282;
+    color: $billdesk-secondary-black;
 }
 
 @media (max-width: 479px) {
@@ -237,6 +236,11 @@ h1 {
     .content-list {
         padding: 0px 25px;
         background-color: white;
+        .section-title{
+          font-size: 14px;
+          color: #969696;
+          margin: 20px 0px;
+        }
         // box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     }
     .content-grid {
