@@ -136,7 +136,10 @@ a[x-apple-data-detectors] {
   overflow: auto;
   background-color: white;
   margin-bottom: 0px;
-  border-top: 1px solid #d5d5d5; }
+  border-top: 1px solid #d5d5d5;
+  height: 56px;
+  top: 90px;
+  position: fixed; }
   .horizontal_tabs li {
     list-style: none;
     display: inline-flex;
@@ -325,7 +328,10 @@ a[x-apple-data-detectors] {
     transition: bottom 2s; }
 
   .buffer-div {
-    height: 90px; } }
+    height: 90px; }
+
+  .plans-buffer {
+    height: 146px; } }
 @media (max-width: 479px) {
   .payment_status {
     font-size: 16px;

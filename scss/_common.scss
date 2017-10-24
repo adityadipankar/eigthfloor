@@ -180,7 +180,9 @@ a[x-apple-data-detectors] {
     background-color: white;
     margin-bottom: 0px;
     border-top: 1px solid #d5d5d5;
-
+    height: 56px;
+    top: 90px;
+    position: fixed;
     li {
         list-style: none;
         display: inline-flex;
@@ -407,5 +409,8 @@ a[x-apple-data-detectors] {
       }
       .buffer-div{
         height: 90px;
+      }
+      .plans-buffer{
+        height: 146px;
       }
 } //end of this section
