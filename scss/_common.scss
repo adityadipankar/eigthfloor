@@ -51,6 +51,15 @@ a[href^="tel"]{
     text-decoration:none;
 }
 
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
 .container {
     padding: 0px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
