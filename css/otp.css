@@ -262,7 +262,8 @@ a[x-apple-data-detectors] {
       line-height: 2.75;
       letter-spacing: 0.1px;
       text-align: left;
-      color: #2e2e2e; }
+      color: inherit;
+      text-decoration: none; }
     .recharge_summary .cost {
       text-align: right; }
       .recharge_summary .cost .amount {
