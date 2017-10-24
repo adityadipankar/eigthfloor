@@ -184,9 +184,11 @@ a[x-apple-data-detectors] {
 @media (max-width: 479px) {
   .nav_bar {
     width: 100%;
-    position: relative;
+    position: fixed;
     padding: 25px;
-    height: 90px; }
+    height: 90px;
+    background-color: #f5f5f5;
+    z-index: 10; }
     .nav_bar img {
       width: auto;
       height: 40px;
@@ -311,7 +313,19 @@ a[x-apple-data-detectors] {
     margin: 0px; }
 
   .padding-top-25 {
-    padding-top: 25px; } }
+    padding-top: 25px; }
+
+  #hovermenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: tomato;
+    -webkit-transition: bottom 2s;
+    transition: bottom 2s; }
+
+  .buffer-div {
+    height: 90px; } }
 @media (max-width: 479px) {
   .payment_status {
     font-size: 16px;
