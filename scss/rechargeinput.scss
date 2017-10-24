@@ -62,14 +62,6 @@
     .view_plans {
         border-top: 1px solid #d1d1d1;
         background-color: #fff;
-        h3 {
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: -0.3px;
-            text-align: left;
-            color: #969696;
-            margin: 10px;
-        }
         ul {
             padding: 0px;
             list-style: none;
@@ -84,8 +76,7 @@
             img {
                 height: 20px;
                 display: inline-block;
-                vertical-align: top;
-                margin-right: 10px;
+                vertical-align: super;
             }
             div {
                 display: inline-block;
@@ -115,6 +106,9 @@
                 font-size: 14px;
                 color: #8e8e8e;
             }
+        }
+        .operator-logo-confine{
+          width: 50px;
         }
     }
 }
