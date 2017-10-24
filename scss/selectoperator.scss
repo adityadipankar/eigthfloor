@@ -61,6 +61,10 @@
           position: relative;
           border: 1px solid #e8e8e8;
           background-color: #f7f7f7;
+            &:hover{
+                border: 1px solid #b8b8b8;
+                background-color: #ffffff;
+            }
             img {
                 width: auto;
                 height: 44%;
