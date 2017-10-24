@@ -327,30 +327,57 @@ h1 {
       display: inline-block;
       vertical-align: top;
       border-radius: 6px;
-      position: relative;
-      border: 1px solid #e8e8e8;
-      background-color: #f7f7f7; }
+      position: relative; }
       .network_operators_grid li img {
         width: auto;
         height: 44%;
         display: block;
         max-width: 72%;
-        margin: auto;
-        margin-top: 12px; }
+        margin-bottom: 5px; }
       .network_operators_grid li span {
         position: absolute;
         bottom: 5px;
-        left: -1px;
-        font-size: 13px;
+        left: 10px;
+        display: block;
+        font-size: 12px;
+        text-align: left;
         width: 100%;
-        color: #2e2e2e;
-        font-family: "gotham-regular";
-        text-align: center;
-        letter-spacing: -0.3px; }
-    .network_operators_grid #jio img {
-      height: 40%; }
-    .network_operators_grid #docomo img {
-      height: auto; }
+        color: #fafeff;
+        font-weight: 300;
+        letter-spacing: -0.3px;
+        font-family: "gotham-regular"; }
+    .network_operators_grid #vodafone {
+      background-color: #d82332; }
+    .network_operators_grid #airtel {
+      background-color: #d32a31; }
+    .network_operators_grid #tata_indicom {
+      background-color: #00a3da; }
+      .network_operators_grid #tata_indicom img {
+        height: auto; }
+    .network_operators_grid #reliance_gsm {
+      background-color: #2066a3; }
+    .network_operators_grid #mtnl_delhi,
+    .network_operators_grid #mtnl_mumbai {
+      background-color: #005b2e; }
+      .network_operators_grid #mtnl_delhi img,
+      .network_operators_grid #mtnl_mumbai img {
+        height: 40%; }
+    .network_operators_grid #jio {
+      background-color: #005aac; }
+      .network_operators_grid #jio img {
+        height: 40%; }
+    .network_operators_grid #idea {
+      background-color: #292d78; }
+    .network_operators_grid #docomo {
+      background-color: #1d0407; }
+      .network_operators_grid #docomo img {
+        height: auto; }
+    .network_operators_grid #bsnl {
+      background-color: #0067a5; }
+    .network_operators_grid #uninor {
+      background-color: #0cbdf1; }
+    .network_operators_grid #mts {
+      background-color: #ef3829; }
 
   .network_circles_list {
     list-style: none;
@@ -398,4 +425,4 @@ h1 {
     letter-spacing: 0.11px;
     line-height: 44px; } }
 
-/*# sourceMappingURL=selectoperator.css.map */
+/*# sourceMappingURL=selectoperator-2.css.map */

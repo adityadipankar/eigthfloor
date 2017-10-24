@@ -51,81 +51,81 @@
         padding: 0px;
         margin-top: 10px;
         li {
-          width: 27vw;
-          height: 27vw;
-          padding: 8px;
-          margin: 1.3vw 0.5vw;
-          display: inline-block;
-          vertical-align: top;
-          border-radius: 6px;
-          position: relative;
-          border: 1px solid #e8e8e8;
-          background-color: #f7f7f7;
+            width: 27vw;
+            height: 27vw;
+            padding: 8px;
+            margin: 1.3vw 0.5vw;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 6px;
+            position: relative;
+
             img {
                 width: auto;
                 height: 44%;
                 display: block;
                 max-width: 72%;
-                margin: auto;
-                margin-top: 12px;
+                margin-bottom: 5px;
             }
             span {
                 position: absolute;
                 bottom: 5px;
-                left: -1px;
-                font-size: 13px;
+                left: 10px;
+                display: block;
+                font-size: 12px;
+                text-align: left;
                 width: 100%;
-                color: #2e2e2e;
-                font-family: "gotham-regular";
-                text-align: center;
+                color: #fafeff;
+                font-weight: 300;
                 letter-spacing: -0.3px;
-          }
+                font-family: $regular-font;
+            }
         }
         #vodafone {
-            // background-color: #d82332;
+            background-color: #d82332;
         }
         #airtel {
-            // background-color: #d32a31;
+            background-color: #d32a31;
         }
         #tata_indicom {
-            // background-color: #00a3da;
+            background-color: #00a3da;
             img {
-                // height: auto;
+                height: auto;
             }
         }
         #reliance_gsm {
-            // background-color: #2066a3;
+            background-color: #2066a3;
         }
         #mtnl_delhi,
         #mtnl_mumbai {
-            // background-color: #005b2e;
+            background-color: #005b2e;
             img {
-                // height: 40%;
+                height: 40%;
             }
         }
         #jio {
-            // background-color: #005aac;
+            background-color: #005aac;
             img {
                 height: 40%;
             }
         }
         #idea {
-            // background-color: #292d78;
+            background-color: #292d78;
         }
         #docomo {
-            // background-color: #1d0407;
+            background-color: #1d0407;
             img {
                 height: auto;
             }
         }
         #bsnl {
-            // background-color: #0067a5;
+            background-color: #0067a5;
         }
         #uninor {
-            // background-color: #0cbdf1;
+            background-color: #0cbdf1;
         }
         #mts {
-            // background-color: #ef3829;
+            background-color: #ef3829;
         }
     }
     .network_circles_list {
