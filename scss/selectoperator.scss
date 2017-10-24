@@ -164,13 +164,9 @@
     }
     .selected_operator {
         img {
-            height: 40px;
-            display: inline-block;
-            vertical-align: top;
-            float: left;
-            width: auto;
-            margin-right: 10px;
-        }
+            height: 30px;
+            margin-top: -8px;
+            }
         span {
             position: absolute;
             right: 5px;
@@ -180,10 +176,11 @@
         }
         .plans-operator-name {
             font-family: "gotham-thin";
-            font-size: 18px;
+            font-size: 16px;
             color: #2e2e2e;
             letter-spacing: 0.11px;
-            line-height: 44px;
+            line-height: 30px;
+            text-align: center;
         }
     }
 }
