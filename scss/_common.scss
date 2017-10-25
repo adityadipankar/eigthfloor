@@ -92,6 +92,12 @@ a[x-apple-data-detectors] {
         padding-top: 8px;
         width: 52px;
         text-align: center;
+        .tez{
+          width: 30px;
+        }
+        .upi{
+          width: 42px;
+        }
     }
     .input-group {
         width: 100%;
@@ -118,6 +124,7 @@ a[x-apple-data-detectors] {
         right: 0px;
         height: 30px;
         top: -11px;
+        display:none;
     }
 }
 .at-the-rate {
